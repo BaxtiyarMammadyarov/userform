@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.table-div{
+    text-align: center;
+    width: 100%;
+
+   margin: 5px;
+ 
+}
+.table{
+    width: 100%;
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.tr {
+
+    border: 1px solid black;
+}
+.tr td {
+
+    border: 1px solid black;
+}
+.search-div {
+    text-align: center;
+    margin: 5px;
+    padding: 1px;
+
+}
+.search-div input{
+    width: 60%;
+
+}

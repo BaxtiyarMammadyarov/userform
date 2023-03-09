@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import {useState} from 'react'
+import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Form from './components/form/Form';
+import Users from './components/users/Users';
+import React from 'react';
 
 function App() {
+  
+  const [list, setList] = useState([{id : "1",fullname : "test",email : "test",password : "test",}]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+    
+       <div><Form  list = {list}  setList = {setList}/></div> 
+       <div><Users list = {list}/></div> 
+
+
+      </div>
+ 
+   
+
   );
 }
 
