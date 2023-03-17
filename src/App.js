@@ -9,7 +9,7 @@ function App() {
   
   const [list, setList] = useState([{id : "1",fullname : "test",email : "test",password : "test",}]);
 
-
+console.log(list)
   return (
     
       <div className="App">
